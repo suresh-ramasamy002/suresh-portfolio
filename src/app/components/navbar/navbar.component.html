@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm sticky-top">
+  <div class="text-right">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="navbarToggle =! navbarToggle ">
+    <span><i class="fa fa-bars"></i></span>
+  </button>
+  </div>
+  <div class="navbar-collapse " id="navbar-list-2" [ngClass]="{'collapse': navbarToggle}" data-animation="slideInLeft" data-animation-delay="1000ms">
+    <ul class="navbar-nav sticky-top">
+      <li class="nav-item">
+        <a class="nav-link" (click)="scroll('home')" [ngClass]="{'active': menuSelected =='home'}">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="scroll('about')" [ngClass]="{'active': menuSelected =='about'}">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="scroll('portfolio')" [ngClass]="{'active': menuSelected =='portfolio'}">PORTFOLIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="scroll('blog')" [ngClass]="{'active': menuSelected =='blog'}">BLOG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="scroll('contact')" [ngClass]="{'active': menuSelected =='contact'}">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>

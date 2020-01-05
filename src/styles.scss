@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../src/assets/css/bootstrap.min.css";
+@import "../src/assets/css/animations-extended.min.css";
+@import "../src/assets/css/aos.scss";
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  margin-top:-20px;
+  font-family: 'Exo', sans-serif;
+}
+*{box-sizing:border-box;}
+div{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.pointer{
+  cursor: pointer;
+}
